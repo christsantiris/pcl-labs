@@ -29,6 +29,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/gtm',
+    '@nuxtjs/markdownit',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     [
@@ -42,7 +44,12 @@ export default {
       },
     ],
   ],
-
+  markdownit: {
+    injected: true,
+  },
+  gtm: {
+    id: 'GTM-MZSRZ7C',
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
